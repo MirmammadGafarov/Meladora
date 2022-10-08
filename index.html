@@ -17,6 +17,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Google Fonts - Cormorant Garamond  -->
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap"
@@ -71,6 +79,14 @@
           </a>
           <!-- Navbar Ends -->
           <!-- Toggler Button Start -->
+
+          <a
+            class="nav-link fire-search mobile-search-icon"
+            id="btn-search"
+            href="#search"
+            ><img src="./icons/btn-search.png" alt=""
+          /></a>
+
           <button
             class="navbar-toggler"
             type="button"
@@ -104,43 +120,46 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Əlaqə</a>
               </li>
-              <!-- Search Button Start -->
-              <li class="nav-item search-icon">
+              <!-- PC Search Button Start -->
+
+              <li class="nav-item search-icon fire-search">
                 <a class="nav-link" id="btn-search" href="#search"
                   ><img src="./icons/btn-search.png" alt=""
                 /></a>
               </li>
-              <!-- Search Button Ends -->
-              <!-- PC Search Form Start -->
-              <form class="toggle-navbar-search-icon">
+
+              <!-- PC Search Button Ends -->
+              <!-- Mobile Search Form Start -->
+              <!-- <form class="toggle-navbar-search-icon">
                 <input
                   type="text"
                   name="search"
                   placeholder="Axtar..."
                   autocomplete="off"
                 />
-              </form>
-              <!-- PC Search Form Ends -->
-              <!-- Mobile Search Form Start-->
-              <div id="search">
-                <img class="close" src="./icons/close.png" alt="" />
-                <form role="search" action="/search" method="get">
-                  <input
-                    id="input"
-                    value=""
-                    type="search"
-                    placeholder="Axtar..."
-                    autocomplete="off"
-                  />
-                </form>
-              </div>
-              <!-- Mobile Search Form Ends-->
+              </form> -->
+              <!-- Mobile Search Form Ends -->
             </ul>
             <!-- Navbar Items Ends -->
           </div>
         </div>
       </nav>
       <!-- Navbar Ends -->
+
+      <!-- PC Search Form Start-->
+      <div id="search">
+        <img class="close" src="./icons/close.png" alt="" />
+        <form role="search" action="/search" method="get">
+          <input
+            id="input"
+            value=""
+            type="search"
+            placeholder="Axtar..."
+            autocomplete="off"
+          />
+        </form>
+      </div>
+      <!-- PC Search Form Ends-->
     </section>
     <!-- Section n1 Ends -->
 
@@ -684,6 +703,17 @@
         <hr />
         <p>Copyright</p>
       </div>
+
+      <!--Go To Top Button Start-->
+      <div class="to-top">
+        <a
+          href="#"
+          class="d-inline-flex justify-content-center align-items-center"
+        >
+          <i class="fa-solid fa-angle-up"></i>
+        </a>
+      </div>
+      <!--Go To Top Button Ends-->
     </footer>
     <!-- Section Footer Ends -->
 

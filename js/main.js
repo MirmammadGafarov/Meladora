@@ -52,7 +52,7 @@ var swiper = new Swiper(".mySwiper", {
 
 /* PC Search Form Start */
 $(document).ready(function () {
-  $("#btn-search").on("click", () => {
+  $(".fire-search").on("click", () => {
     $("#search").addClass("open");
     $("#input").focus();
   });

@@ -83,6 +83,12 @@
   text-shadow: 3px 3px 6px white;
 }
 
+.mobile-search-icon {
+  padding-right: 15px;
+  margin-left: auto;
+  display: none;
+}
+
 .navbar-nav .search-icon a {
   padding: 8px 2px !important;
 }
@@ -137,8 +143,8 @@
   height: 25px;
   cursor: pointer;
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 80px;
+  right: 80px;
 }
 
 /* Remove X (default) sign from input box */
@@ -151,7 +157,7 @@ input[type="search"]::-webkit-search-results-decoration {
 /* PC Search Form Ends */
 
 /* Mobile Search Form Start */
-.navbar-nav .toggle-navbar-search-icon {
+/* .navbar-nav .toggle-navbar-search-icon {
   display: none;
 }
 
@@ -174,7 +180,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .toggle-navbar-search-icon input:focus {
   width: 40%;
-}
+} */
 /* Mobile Search Form Ends */
 /* Navbar Ends */
 /* Section n1 Ends */
@@ -565,6 +571,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 /* Footer Start */
 footer {
+  position: relative;
   margin-top: -150px;
   width: 1440px;
   height: auto;
@@ -633,13 +640,41 @@ footer p {
   color: #fff;
   font: 18px;
 }
+
+/* Go To Top Button Start */
+.to-top {
+  position: absolute;
+  right: 10%;
+  bottom: 20%;
+}
+.to-top a {
+  text-decoration: none;
+  background: #91b40d;
+  width: 42px;
+  height: 42px;
+  color: white;
+  opacity: 1;
+  cursor: pointer;
+  transition: all 0.4s;
+  border-radius: 3px;
+}
+
+.to-top a:hover {
+  background-color: #ffbf00;
+  color: black;
+}
+
+.to-top i {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+/* Go To Top Button Ends */
+
 /* Footer Ends */
-/* media queries */
 
 /* Media Queries */
-
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   1200px   <<<<<<<<<< */
-
 @media screen and (max-width: 1199px) {
   .nav-item .nav-link {
     font-size: 20px !important;
@@ -678,6 +713,11 @@ footer p {
   .text-wrapper span {
     font-size: 20px;
   }
+
+  .to-top {
+    right: 5%;
+    bottom: 2%;
+  }
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   992px   <<<<<<<<<< */
@@ -693,6 +733,10 @@ footer p {
 
   .navbar-nav .search-icon {
     display: none;
+  }
+
+  .mobile-search-icon {
+    display: block;
   }
 
   .navbar-nav .toggle-navbar-search-icon {
@@ -760,6 +804,10 @@ footer p {
   .card-regular {
     display: flex !important;
     margin-top: 0px !important;
+  }
+
+  .to-top {
+    bottom: 1%;
   }
 }
 
@@ -857,5 +905,43 @@ footer p {
 
   .text-wrapper .price {
     font-size: 16px !important;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   HEIGHT   <<<<<<<<<< */
+
+@media screen and (max-height: 1368px) {
+  .section-n2 {
+    height: 52vh;
+  }
+}
+
+@media screen and (max-height: 1180px) {
+  .section-n2 {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-height: 1024px) {
+  .section-n3 {
+    margin-top: 200px !important;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .section-n3 {
+    margin-top: 300px !important;
+  }
+}
+
+@media screen and (max-height: 667px) {
+  .slider-section {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-height: 653px) {
+  .section-n3 {
+    margin-top: 400px !important;
   }
 }
