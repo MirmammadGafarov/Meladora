@@ -923,26 +923,8 @@ footer p {
   }
 }
 
-@media screen and (max-height: 1024px) {
-  .section-n3 {
-    margin-top: 200px !important;
-  }
-}
-
-@media screen and (max-height: 800px) {
-  .section-n3 {
-    margin-top: 300px !important;
-  }
-}
-
 @media screen and (max-height: 667px) {
   .slider-section {
     margin-top: 100px;
-  }
-}
-
-@media screen and (max-height: 653px) {
-  .section-n3 {
-    margin-top: 400px !important;
   }
 }
