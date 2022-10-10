@@ -12,7 +12,7 @@ $(window).scroll(() => {
   }
 });
 
-// SWIPER Start
+// Main SWIPER Start
 var swiper = new Swiper(".mainSwiper", {
   autoplay: {
     delay: 2000,
@@ -48,7 +48,7 @@ var swiper = new Swiper(".mainSwiper", {
     clickable: true,
   },
 });
-// SWIPER Ends
+// Main SWIPER Ends
 
 /* PC Search Form Start */
 $(document).ready(function () {
@@ -86,7 +86,7 @@ $(document).on("click", ".cat-name-button", function (e) {
   }
 });
 
-// SWIPER Start
+// Gallery SWIPER Start
 var swiper = new Swiper(".gallerySwiper", {
   // Responsive breakpoints
   breakpoints: {
@@ -116,18 +116,22 @@ var swiper = new Swiper(".gallerySwiper", {
 
   loop: true,
 });
-// SWIPER Ends
+// Gallery SWIPER Ends
 
+// ZoomIn & ZoomOut Slider images Start
 $(document).ready(function () {
   $(".zoom-in").click(function (event) {
     const getId = event.target.id;
     const getNum = getId.slice(-1);
     const zoomIn = "#b" + getNum;
     $(zoomIn).fadeIn();
+    // Hide navbar
     $(".navbar").fadeOut(50);
   });
   $(".zoom-out").click(function () {
     $(".full-screen").fadeOut();
+    // Show navbar
     $(".navbar").fadeIn();
   });
 });
+// ZoomIn & ZoomOut Slider images Ends
