@@ -13,7 +13,7 @@ $(window).scroll(() => {
 });
 
 // SWIPER Start
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".mainSwiper", {
   autoplay: {
     delay: 2000,
   },
@@ -84,4 +84,50 @@ $(document).on("click", ".cat-name-button", function (e) {
     $(".product").hide();
     $("#" + type + ".product").fadeIn(1000);
   }
+});
+
+// SWIPER Start
+var swiper = new Swiper(".gallerySwiper", {
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 60,
+    },
+
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 70,
+    },
+    // when window width is >= 992px
+    992: {
+      slidesPerView: 3,
+
+      spaceBetween: 30,
+    },
+    // when window width is >= 1200px
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 55,
+    },
+  },
+
+  loop: true,
+});
+// SWIPER Ends
+
+$(document).ready(function () {
+  $(".zoom-in").click(function (event) {
+    const getId = event.target.id;
+    const getNum = getId.slice(-1);
+    const zoomIn = "#b" + getNum;
+    $(zoomIn).fadeIn();
+    $(".navbar").fadeOut(50);
+  });
+  $(".zoom-out").click(function () {
+    $(".full-screen").fadeOut();
+    $(".navbar").fadeIn();
+  });
 });
