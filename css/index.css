@@ -574,7 +574,6 @@ input[type="search"]::-webkit-search-results-decoration {
 /* Footer Start */
 footer {
   position: relative;
-  margin-top: -150px;
   width: 1440px;
   height: auto;
   background-image: url(../img/footer.png);
@@ -807,6 +806,10 @@ footer p {
     margin-top: 0px !important;
   }
 
+  .s3-section-layer {
+    display: none;
+  }
+
   .to-top {
     bottom: 1%;
   }
@@ -895,6 +898,10 @@ footer p {
 
   .text-wrapper span {
     font-size: 16px;
+  }
+
+  .s3-sticker-position {
+    display: none;
   }
 }
 
