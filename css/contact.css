@@ -180,7 +180,6 @@ input[type="search"]::-webkit-search-results-decoration {
 /* PC Search Form Ends */
 
 /* Navbar Ends */
-/* Section n1 Ends */
 
 .garden-banner {
   position: relative;
@@ -197,9 +196,9 @@ input[type="search"]::-webkit-search-results-decoration {
   right: 113px !important;
   bottom: -100px;
 }
+/* Section n1 Ends */
 
 /* section n2 start */
-
 .section-n2 {
   padding: 50px 10px;
   position: relative;
@@ -266,6 +265,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .section-n2 .right a i {
   color: #91b40d;
 }
+/* section n2 Ends */
 
 /* Footer Start */
 footer {
