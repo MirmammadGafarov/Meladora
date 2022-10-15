@@ -27,7 +27,7 @@
 
 .garden-banner {
   height: 80vh;
-  background-image: url(/img/banner-2.png);
+  background-image: url(../img/banner-2.png);
   background-size: cover;
   background-position: 50% 0;
 }
@@ -183,7 +183,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .garden-banner {
   position: relative;
   height: 500px;
-  background-image: url(/img/banner-2.png);
+  background-image: url(../img/banner-2.png);
   background-size: cover;
   background-position: 50% 0;
 }
